@@ -1,16 +1,17 @@
 import datetime
-import pytz
+# import pytz
 
-a = datetime.datetime.utcnow().replace(tzinfo=pytz.UTC)
+a = datetime.datetime.utcnow()
+# a = datetime.datetime.utcnow().replace(tzinfo=pytz.UTC)
 
 b = str(a)
 
-print 'str(a): {}'.format(str(a))
-print 'str(b): {}'.format(str(b))
+print('str(a): {}'.format(str(a)))
+print('str(b): {}'.format(str(b)))
 
-print
+print()
 
-print 'repr(a): {}'.format(repr(a))
-print 'repr(b): {}'.format(repr(b))
+print('repr(a): {}'.format(repr(a)))
+print('repr(b): {}'.format(repr(b)))
 
-print
+print()

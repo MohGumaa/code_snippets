@@ -28,3 +28,4 @@ def remove_emp(emp):
     with conn:
         c.execute("DELETE from employees WHERE first = :first AND last = :last",
                   {'first': emp.first, 'last': emp.last})
+fetchone(), fetchmany(5), fetchall()

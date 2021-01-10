@@ -11,5 +11,7 @@ with open('names.csv', 'r') as csv_file:
         csv_writer.writeheader()
 
         for line in csv_reader:
-            del line['email']
-            csv_writer.writerow(line)
+            # del line['email']
+            # We can create dic with key  f, l name and pass it
+            my_dic = {'first_name': line.get('first_name'), 'last_name': line.get('last_name')}
+            csv_writer.writerow(my_dic)

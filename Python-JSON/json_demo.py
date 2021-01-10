@@ -3,6 +3,7 @@ import json
 
 with open('states.json') as f:
   data = json.load(f)
+  print(type(data))
 
 for state in data['states']:
   del state['area_codes']

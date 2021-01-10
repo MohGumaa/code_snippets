@@ -54,12 +54,22 @@ people = [
     }
 ]
 
+# with open('test.log') as f:
+#     header = itertools.islice(f, 3)
+#     for line in header:
+#         print(line, end='')
+
 person_group = itertools.groupby(people, get_state)
 
 copy1, copy2 = itertools.tee(person_group)
+# copies = itertools.tee(person_group, 2)
 
-for key, group in person_group:
-    print(key, len(list(group)))
-    # for person in group:
-    #     print(person)
+print(list(copy2),list(copy1))
+
+# for key, group in person_group:
+#     # print(key, group)
+#     # print(key, len(list(group)))
+#     print(key)
+#     for person in group:
+#         print(person)
     # print()

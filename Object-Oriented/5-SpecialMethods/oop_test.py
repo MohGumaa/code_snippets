@@ -15,13 +15,16 @@ class Employee:
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amt)
 
+    # It use for debugging for developer
     def __repr__(self):
         return "Employee('{}', '{}', {})".format(self.first, self.last, self.pay)
 
+    # It use to user for more readable
     def __str__(self):
         return '{} - {}'.format(self.fullname(), self.email)
 
     def __add__(self, other):
+        # Here other represent second instance
         return self.pay + other.pay
 
     def __len__(self):
@@ -31,6 +34,14 @@ class Employee:
 emp_1 = Employee('Corey', 'Schafer', 50000)
 emp_2 = Employee('Test', 'Employee', 60000)
 
-# print(emp_1 + emp_2)
+# __str__
+print(emp_2)
+print(repr(emp_2))
+print(emp_2.__repr__())
 
+print(int.__add__(1,5))
+print(str.__add__('a','b'))
+print(emp_1 + emp_2)
+
+print('test'.__len__())
 print(len(emp_1))

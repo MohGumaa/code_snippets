@@ -55,23 +55,23 @@ print(sentence)
 
 sentence = '1 MB is equal to {} bytes'.format(1000**2)
 
-print(sentence)
+# print(sentence)
 
 
-import datetime
+# import datetime
 
-my_date = datetime.datetime(2016, 9, 24, 12, 30, 45)
+# my_date = datetime.datetime(2016, 9, 24, 12, 30, 45)
 
 # print(my_date)
 
 # March 01, 2016
 
-sentence = '{:%B %d, %Y}'.format(my_date)
+# sentence = '{:%B %d, %Y}'.format(my_date)
 
-print(sentence)
+# print(sentence)
 
 # March 01, 2016 fell on a Tuesday and was the 061 day of the year.
 
-sentence = '{:%B %d, %Y} fell on a {} and was the {} day of the year'.format(my_date)
+# sentence = '{:%B %d, %Y} fell on a {} and was the {} day of the year'.format(my_date)
 
-print(sentence)
+# print(sentence)

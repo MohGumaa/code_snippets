@@ -5,6 +5,8 @@ from employee import Employee
 
 class TestEmployee(unittest.TestCase):
 
+    # These class methods will run after any setup and tearDown after all test
+    # The class method wrok with class will run once before everything and last after everything
     @classmethod
     def setUpClass(cls):
         print('setupClass')

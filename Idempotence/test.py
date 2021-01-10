@@ -5,9 +5,9 @@ def add_ten(num):
 
 # f(f(x))   =  f(x)
 #   f(f(10)) = 30 | f(10) = 20
-# print add_ten(add_ten(10))
-
-print abs(abs(abs(-10)))
+print(add_ten(add_ten(10)))
+print(add_ten(add_ten(add_ten(-10))))
+print(abs(abs(abs(-10))))
 # abs(-10) == 10
 # abs(10) == 10
 # abs(10) == 10

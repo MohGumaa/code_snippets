@@ -5,6 +5,7 @@ class MyRange:
         self.value = start
         self.end = end
 
+    # Here return it self bcz have dunder__next__
     def __iter__(self):
         return self
 
@@ -16,14 +17,27 @@ class MyRange:
         return current
 
 
-def my_range(start):
+# def my_range(start):
+#     current = start
+#     while True:
+#         yield current
+#         current += 1
+
+def my_range(start, end):
     current = start
-    while True:
+    while current < end:
         yield current
         current += 1
 
+nums = MyRange(1,5)
 
-nums = my_range(1)
+# nums = my_range(1)
 
-for num in nums:
-    print(num)
+# for num in nums:
+#     print(num)
+# Also
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+

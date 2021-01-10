@@ -1,12 +1,12 @@
 nums = [1,2,3,4,5,6,7,8,9,10]
 
 # I want 'n' for each 'n' in nums
-my_list = []
-for n in nums:
-  my_list.append(n)
-print my_list
+# my_list = []
+# for n in nums:
+#   my_list.append(n)
+# print my_list
 
-print [n for n in nums]
+# print [n for n in nums]
 
 # I want 'n*n' for each 'n' in nums
 # my_list = []
@@ -25,6 +25,9 @@ print [n for n in nums]
 #     my_list.append(n)
 # print my_list
 
+# my_list = [n for n in nums if n % 2 != 0]
+# print(my_list)
+
 # Using a filter + lambda
 # my_list = filter(lambda n: n%2 == 0, nums)
 # print my_list
@@ -39,7 +42,8 @@ print [n for n in nums]
 # Dictionary Comprehensions
 names = ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']
 heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
-# print zip(names, heros)
+# Here we can assign to tuple or set or list
+# print(list(zip(names, heros)))
 
 # I want a dict{'name': 'hero'} for each name,hero in zip(names, heros)
 # my_dict = {}
@@ -63,11 +67,11 @@ heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
 # I want to yield 'n*n' for each 'n' in nums
 nums = [1,2,3,4,5,6,7,8,9,10]
 
-# def gen_func(nums):
-#     for n in nums:
-#         yield n*n
+def gen_func(nums):
+    for n in nums:
+        yield n*n
 
-# my_gen = gen_func(nums)
+my_gen = gen_func(nums)
 
-# for i in my_gen:
-#     print i
+for i in my_gen:
+    print(i)

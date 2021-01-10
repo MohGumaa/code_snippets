@@ -18,3 +18,7 @@ class Employee:
 
 
 emp_1 = Employee('John', 'Smith')
+
+print(emp_1.email)
+emp_1.first = 'Adam'
+print(emp_1.email)

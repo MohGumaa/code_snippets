@@ -8,22 +8,24 @@ tday = datetime.date.today()
 
 
 # weekday() - Monday is 0 and Sunday is 6
-# print(tday)
+print(tday.weekday())
 
 # isoweekday() - Monday is 1 and Sunday is 7
-# print(tday)
+print(tday.isoweekday())
 
 
 # datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)
 
 tdelta = datetime.timedelta(hours=12)
 
+# will give new data
 # print(tday + tdelta)
 
+# will give new timedelta
 # date2 = date1 + timedelta
 # timedelta = date1 + date2
 
-bday = datetime.date(2016, 9, 24)
+bday = datetime.date(2020, 9, 24)
 
 till_bday = bday - tday
 
@@ -63,7 +65,7 @@ print(dt_mtn.strftime('%B %d, %Y'))
 
 dt_str = 'July 24, 2016'
 dt = datetime.datetime.strptime(dt_str, '%B %d, %Y')
-print(dt)
+# print(dt)
 
 # strftime - Datetime to String
 # strptime - String to Datetime

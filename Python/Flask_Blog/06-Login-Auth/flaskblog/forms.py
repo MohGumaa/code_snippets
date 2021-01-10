@@ -14,9 +14,12 @@ class RegistrationForm(FlaskForm):
                                      validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Sign Up')
 
+    # Will execute when will validate form on submit
     def validate_username(self, username):
         user = User.query.filter_by(username=username.data).first()
         if user:
+
+            # Send message to form
             raise ValidationError('That username is taken. Please choose a different one.')
 
     def validate_email(self, email):

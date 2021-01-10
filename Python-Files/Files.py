@@ -1,47 +1,51 @@
 #File Objects
 
 ##The Basics:
-#f = open("test.txt", "r")
-#f = open("test.txt", "w")
-#f = open("test.txt", "a")
-#f = open("test.txt", "r+")
-#print(f.name)
-#print(f.mode)
-#f.close()
+# f = open("test.txt", "r")
+# f = open("test.txt", "w")
+# f = open("test.txt", "a")
+# f = open("test.txt", "r+")
+# print(f.name)
+# print(f.mode)
+# f.close()
 
 ##Reading Files:
-#with open("test.txt", "r") as f:
-	#pass
+with open("test.txt", "r") as f:
+	# pass
 
-	##Small Files:
+	# Small Files:
+	# f_contents = f.read()
+	# print(f_contents)
+
+	## Big Files read file and return list of lines
+	# f_contents = f.readlines()
+	# print(f_contents)
+
+    ### With the extra lines and
+	# f_contents = f.readline()
+	# print(f_contents)
+
+	# without extra line:
+	f_contents = f.readline()
+	print(f_contents, end='')
+
+	### Without the extra lines:
+	#f_contents = f.readline()
+	#print(f_contents, end = '')
+
+	#f_contents = f.readline()
+	#print(f_contents, end = '')
+
+	### Iterating through the file:
+	# for line in f:
+		# print(line)
+		# print(line, end = '')
+
+	### Going Back....:
 	#f_contents = f.read()
-	#print(f_contents)
-
-	##Big Files:
-	#f_contents = f.readlines()
-	#print(f_contents)
-
-    ###With the extra lines:
-	#f_contents = f.readline()
-	#print(f_contents)
-	#f_contents = f.readline()
-	#print(f_contents)
-
-	###Without the extra lines:
-	#f_contents = f.readline()
-	#print(f_contents, end = '')
-	#f_contents = f.readline()
 	#print(f_contents, end = '')
 
-	###Iterating through the file:
-	#for line in f:
-		#print(line, end = '')
-
-	###Going Back....:
-	#f_contents = f.read()
-	#print(f_contents, end = '')
-
-	###Printing by characters:
+	### Printing by characters:
 	#f_contents = f.read(100)
 	#print(f_contents, end = '')
 	#f_contents = f.read(100)

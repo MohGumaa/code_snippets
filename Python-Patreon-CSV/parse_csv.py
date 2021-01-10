@@ -5,8 +5,10 @@ names = []
 
 with open('patrons.csv', 'r') as data_file:
     csv_data = csv.DictReader(data_file)
+    # print(list(csv_data))
 
     # We don't want first line of bad data
+    # here will through first line and 2nd
     next(csv_data)
 
     for line in csv_data:

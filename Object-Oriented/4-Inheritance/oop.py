@@ -23,13 +23,6 @@ print(dev_1.email)
 print(dev_2.email)
 
 
-
-
-
-
-
-
-
 # print(dev_1.raise_amt)
 # dev_1.apply_raise()
 # print(dev_1.raise_amt)

@@ -39,6 +39,8 @@ num_1 = 20
 num_2 = 10
 
 add_result = add(num_1, num_2)
+# print(('Add: {} + {} = {}'.format(num_1, num_2, add_result)))
+# logging.warning('Add: {} + {} = {}'.format(num_1, num_2, add_result))
 logging.debug('Add: {} + {} = {}'.format(num_1, num_2, add_result))
 
 sub_result = subtract(num_1, num_2)

@@ -2,7 +2,6 @@
 LEGB
 Local, Enclosing, Global, Built-in
 '''
-
 for a in range(2):
     x = 'global {}'.format(a)
 

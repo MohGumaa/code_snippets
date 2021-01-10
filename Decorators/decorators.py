@@ -38,3 +38,4 @@ def display_info(name, age):
     print('display_info ran with arguments ({}, {})'.format(name, age))
 
 display_info('Tom', 22)
+# print(display_info.__name__)

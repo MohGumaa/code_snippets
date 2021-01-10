@@ -1,4 +1,3 @@
-
 class Employee:
 
     raise_amt = 1.04
@@ -28,6 +27,8 @@ class Manager(Employee):
 
     def __init__(self, first, last, pay, employees=None):
         super().__init__(first, last, pay)
+        # Employee.__init__(self, first, last, pay)
+
         if employees is None:
             self.employees = []
         else:
@@ -49,11 +50,23 @@ class Manager(Employee):
 dev_1 = Developer('Corey', 'Schafer', 50000, 'Python')
 dev_2 = Developer('Test', 'Employee', 60000, 'Java')
 
+# class Developer(Employee):
+#     pass
+
+# Here to see chain of class method to inheritance
+print(help(Developer))
+
 mgr_1 = Manager('Sue', 'Smith', 90000, [dev_1])
 
-print(mgr_1.email)
+# print(mgr_1.email)
 
 mgr_1.add_emp(dev_2)
 mgr_1.remove_emp(dev_2)
 
 mgr_1.print_emps()
+
+# Check subclass
+# print(issubclass(Manager, Developer))
+
+# Check if instance of class
+# print(isinstance(mgr_1, Employee))

@@ -2,12 +2,12 @@ def outer():
     x = 10
     def inner():
         y = 20
-    inner()
-    return x + y
+        print(y)
+    return inner
 
-my_func = outer
+my_func = outer()
 
-print my_func()
+my_func()
 
 # h1_tag = html_tag('h1')
 # print h1_tag
